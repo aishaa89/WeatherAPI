@@ -12,7 +12,7 @@ let afterTomorrow=document.getElementById("aftertomorow");
 
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 async function getCurrentdata(){
-    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=46e26642635d4c96979184516240501&q=Cairo&days=7`)
+    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=46e26642635d4c96979184516240501&q=Cairo&days=7`)
     let result= await response.json();
     let d = new Date(result.current.last_updated);
      let dayName = days[d.getDay()];
@@ -68,7 +68,7 @@ getCurrentdata();
 
 
 async function getqueryData(query){
-    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=46e26642635d4c96979184516240501&q=${query}&days=7`)
+    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=46e26642635d4c96979184516240501&q=${query}&days=7`)
     let result= await response.json();
     let d = new Date(result.current.last_updated);
      let dayName = days[d.getDay()];
@@ -134,7 +134,16 @@ searchBtnInput.addEventListener('click' ,function(eventInfo){
    
     });
 
-
-searchInput.addEventListener("input",function(){
-    getqueryData(searchInput.value.toUpperCase());
-})
+// async function search(query){
+//   let countryName;
+//       let response = await fetch(`https://api.weatherapi.com/v1/search.json?key=46e26642635d4c96979184516240501&q=${query}`)
+//     let result= await response.json();
+//     for(let i=0;i<result.length;i++){
+//       countryName= result[i].name
+//     }
+//     getqueryData(countryName);
+    
+// }
+// searchInput.addEventListener("input",function(){
+//     search(searchInput.value.toUpperCase());
+// })
