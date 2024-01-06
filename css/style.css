@@ -1,0 +1,151 @@
+
+:root{
+    --main-color:#FFFFF2;
+    /* --second-color:#fff; */
+   
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: #1E202B;
+}
+input[type="text"]::placeholder {
+    color:#757569;
+   
+  }
+  
+
+/* ================Navbar========= */
+#navbar{
+    background-color:#000;
+}
+#navbar  a{
+    text-transform: capitalize;
+    color: var(--main-color) !important;
+    
+}
+
+#navbar .logo .logo-type h1{
+    font-weight: 400;
+    font-size: 20px;
+} 
+#navbar .logo .logo-type span{
+    font-weight: 100;
+    font-size: small;
+}
+#navbar .nav-item .nav-link.active{
+    border: 1px solid #009AD8;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #009AD8 !important;
+
+}
+#navbar .nav-item .nav-link{
+   position: relative;
+   margin: 10px;
+   
+}
+
+
+
+/* =================home Section Style============= */
+
+#home{
+    background-image: url(../image/banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#home .home-overlay{
+    height: 100%;
+}
+
+#home .home-search{
+    position: relative;
+    
+}
+#home .home-search input[type="text"]{
+          box-shadow: none;
+          border: none;
+          background-color: #1E202B;
+          color: #FFFFF2;
+          
+}
+#home .home-search input[type="button"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+
+}
+#today .card-body,#aftertomorow .card-body{
+    background-color: #323544;
+}
+#today .card-header ,#aftertomorow .card-header{
+    background-color: #2D303D;
+}
+#tomorrow .card-header{
+    background-color: #222530;
+}
+#tomorrow .card-body{
+    background-color: #262936;
+}
+#tomorrow,#today,#aftertomorow{
+    color: #FFFFF2;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* footer style */
+#footer{
+    position: relative;
+    background-color: #262936;
+}
+#footer .footer-contact{
+    position: relative;
+
+}
+#footer .footer-contact input[type="button"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+
+}
+#footer .footer-contact input[type="text"]{
+    background-color: #1E202B;
+    color: #FFFFF2;
+   
+}
+#footer .social-links .icon{
+    width: 40px;
+    height: 40px;
+    background-color: #1E202B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#footer .social-links .icon a{
+
+    font-size: 20px;
+}
+#footer .social-links .icon:hover{
+background-color: #009AD8;
+ 
+}
+#footer .social-links .icon:hover a{
+   color: #FFFFF2;
+}

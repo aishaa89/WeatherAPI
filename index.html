@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg  py-4">
+            <div class="container">
+              <a class="navbar-brand logo fs-5  d-flex justify-content-between" href="#">
+                <img src="image/logo.png">
+                <div class="logo-type ms-3 mt-2">
+                    <h1 class="site-title">Weather</h1>
+                    <span class="site-description">tagline goes here</span>
+                </div>
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-auto-close="false" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item  ">
+                    <a class="nav-link active  rounded-pill" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#news">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#livecamera">Live Cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#photos">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+               
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+    </section>
+   <!-- =================Home Section==================== -->
+    <section id="home" class="d-flex flex-column justify-content-center pt-5">
+      <div class="home-overlay ">
+        <div class="home-context ">
+         <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center ">
+              <div class="home-search ">
+                 <input type="text" id="search" placeholder="Find your location" class="form-control rounded-pill w-100 p-3"  >
+               <input type="button" id="searchBtn" value="Find"  class="bg-info border-0 rounded-pill " >
+
+               </div>
+                   <span id="warningMsg" class="text-danger  d-none">*Enter your Location</span>
+               </div>
+
+               <div class="col-md-12">
+                <div class="home-forcast my-5">
+                  <div class="row gx-0">
+                    <div class="col-md-4">
+                    <div class="card border-0 " id="today">
+                     
+                         </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card border-0" id="tomorrow">
+                     
+                         </div>
+                  </div>
+                <div class="col-md-4 justify-content-around ">
+                    <div class="card border-0" id="aftertomorow">
+                    
+                         </div>
+                  </div>
+                </div>
+                
+     
+          </div>
+         </div>
+         
+        
+        </div>
+       
+      </div>
+    </div>
+    </div>
+    </section>
+
+<!--============ Footer Section=============== -->
+    <section id="footer" class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+        <div class="footer mt-5">
+      <div class="footer-contact w-100 ">
+        <input type="text" id="subscribe" placeholder="Enter your Email to subscribe" class="form-control border-0 rounded-pill w-100 p-3"  >
+        <input type="button" id="btnsubmit" value="Subscribe"  class="bg-info border-0 rounded-pill " >
+      </div>
+         <p class="text-light mt-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+        <div class="col-md-3 offset-md-1">
+          <div class="social-links   mt-5 d-flex justify-content-evenly">
+            <div class="icon rounded-circle p-2">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div class="icon rounded-circle p-2">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="icon rounded-circle p-2">
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+            <div class="icon rounded-circle p-2">
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+         
