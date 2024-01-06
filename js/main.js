@@ -134,16 +134,22 @@ searchBtnInput.addEventListener('click' ,function(eventInfo){
    
     });
 
-// async function search(query){
-//   let countryName;
-//       let response = await fetch(`https://api.weatherapi.com/v1/search.json?key=46e26642635d4c96979184516240501&q=${query}`)
-//     let result= await response.json();
-//     for(let i=0;i<result.length;i++){
-//       countryName= result[i].name
-//     }
-//     getqueryData(countryName);
+async function search(query){
+  let countryName;
+      let response = await fetch(`https://api.weatherapi.com/v1/search.json?key=46e26642635d4c96979184516240501&q=${query}`)
+    let result= await response.json();
+    for(let i=0;i<result.length;i++){
+      countryName= result[i].name
+    }
+    getqueryData(countryName);
+
     
-// }
-// searchInput.addEventListener("input",function(){
-//     search(searchInput.value.toUpperCase());
-// })
+}
+searchInput.addEventListener("input",function(){
+   let inputValue=searchInput.value.toUpperCase();
+   if(inputValue.length>3){
+    search(inputValue);
+   }
+
+    
+})
